@@ -1,0 +1,161 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPW33ubSai85CuZqTc8vuCy",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/GdCunha412/meuprimeiroproject/blob/main/Implemeta%C3%A7%C3%A3o%20da%20Calculadora\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "pEPdh7DVNmtc"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def Calculadora():\n",
+        "    while True:\n",
+        "      print(\"Calculadora Simples\")\n",
+        "      print()\n",
+        "      print(\"1. Soma\")\n",
+        "      print(\"2. Subtração\")\n",
+        "      print(\"3. Multiplicação\")\n",
+        "def Calculadora():\n",
+        "    while True:\n",
+        "      print(\"Calculadora Simples\")\n",
+        "      print()\n",
+        "      print(\"1. Soma\")\n",
+        "      print(\"2. Subtração\")\n",
+        "      print(\"3. Multiplicação\")\n",
+        "      print(\"4. Divisão\")\n",
+        "      print(\"5. Sair\")\n",
+        "      operacao = input(\"Selecione uma opção ou 's' para sair: \")\n",
+        "\n",
+        "      if operacao == 's' or operacao == 'S':\n",
+        "        print(\"Obrigado por utilizar a Calculadora Simples\")\n",
+        "        break\n",
+        "\n",
+        "      if operacao not in['1', '2', '3', '4']:\n",
+        "        print(\"Opção inválida! Tente novamente.\")\n",
+        "        continue\n",
+        "\n",
+        "\n",
+        "      numero_1 = float(input(\"Primeiro número: \"))\n",
+        "      numero_2 = float(input(\"Segundo número: \"))\n",
+        "\n",
+        "      if operacao == '1':\n",
+        "          resultado = numero_1 + numero_2\n",
+        "          print(\"O resultado da operacao soma é: \", resultado)\n",
+        "      elif operacao == '2':\n",
+        "          resultado = numero_1 - numero_2\n",
+        "          print(\"O resultado da operacao subtração é: \", resultado)\n",
+        "      elif operacao == '3':\n",
+        "          resultado = numero_1 * numero_2\n",
+        "          print(\"O resultado da operacao multiplicação é: \", resultado)\n",
+        "      else:\n",
+        "           if numero_2 == 0:\n",
+        "               print(\"Divisões por zero não são possíveis. Tente novamente\")\n",
+        "               continue\n",
+        "           else:\n",
+        "                resultado = numero_1 / numero_2\n",
+        "                print(\"O resultado da operacao divisão é: \", resultado)\n",
+        "                print(\"Obrigado por utilizar a Calculadora Simples\")\n",
+        "                break\n",
+        "\n",
+        "      if operacao not in['1', '2', '3', '4']:\n",
+        "        print(\"Opção inválida! Tente novamente.\")\n",
+        "        continue\n",
+        "\n",
+        "\n",
+        "      numero_1 = float(input(\"Primeiro número: \"))\n",
+        "      numero_2 = float(input(\"Segundo número: \"))\n",
+        "\n",
+        "      if operacao == '1':\n",
+        "          resultado = numero_1 + numero_2\n",
+        "          print(\"O resultado da operacao soma é: \", resultado)\n",
+        "      elif operacao == '2':\n",
+        "          resultado = numero_1 - numero_2\n",
+        "          print(\"O resultado da operacao subtração é: \", resultado)\n",
+        "      elif operacao == '3':\n",
+        "          resultado = numero_1 * numero_2\n",
+        "          print(\"O resultado da operacao multiplicação é: \", resultado)\n",
+        "      else:\n",
+        "           if numero_2 == 0:\n",
+        "               print(\"Divisões por zero não são possíveis. Tente novamente\")\n",
+        "               continue\n",
+        "           else:\n",
+        "                resultado = numero_1 / numero_2\n",
+        "                print(\"O resultado da operacao divisão é: \", resultado)\n",
+        "\n",
+        "Calculadora()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "p6Uy53nb0hRF",
+        "outputId": "be13c8b1-12d1-45f8-99c7-f4a8fd61fcc1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Calculadora Simples\n",
+            "\n",
+            "1. Soma\n",
+            "2. Subtração\n",
+            "3. Multiplicação\n",
+            "4. Divisão\n",
+            "5. Sair\n",
+            "Selecione uma opção ou 's' para sair: 3\n",
+            "Primeiro número: 20\n",
+            "Segundo número: 45\n",
+            "O resultado da operacao multiplicação é:  900.0\n",
+            "Primeiro número: 20\n",
+            "Segundo número: 20\n",
+            "O resultado da operacao multiplicação é:  400.0\n",
+            "Calculadora Simples\n",
+            "\n",
+            "1. Soma\n",
+            "2. Subtração\n",
+            "3. Multiplicação\n",
+            "4. Divisão\n",
+            "5. Sair\n",
+            "Selecione uma opção ou 's' para sair: 4\n",
+            "Primeiro número: 20\n",
+            "Segundo número: 10\n",
+            "O resultado da operacao divisão é:  2.0\n",
+            "Obrigado por utilizar a Calculadora Simples\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
